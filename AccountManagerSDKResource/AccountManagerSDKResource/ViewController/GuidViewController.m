@@ -6,10 +6,10 @@
 //  Copyright © 2016年 ZeluLi. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "GuidViewController.h"
 #import "LoginAPI.h"
 
-@interface ViewController ()
+@interface GuidViewController ()
 @property (strong, nonatomic) IBOutlet UILabel *loginStateLabel;
 @property (nonatomic, strong) LoginAPI *loginAPI;
 @end

@@ -22,7 +22,7 @@
 		F4B50AA01D766EE000F907D6 /* LoginAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B50A8F1D766EE000F907D6 /* LoginAPI.m */; };
 		F4B50AA11D766EE000F907D6 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B50A931D766EE000F907D6 /* LoginViewController.m */; };
 		F4B50AA21D766EE000F907D6 /* LoginSDKResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F4B50A941D766EE000F907D6 /* LoginSDKResource.bundle */; };
-		F4B50AA31D766EE000F907D6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B50A981D766EE000F907D6 /* ViewController.m */; };
+		F4B50AA31D766EE000F907D6 /* GuidViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B50A981D766EE000F907D6 /* GuidViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,8 +54,8 @@
 		F4B50A931D766EE000F907D6 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		F4B50A941D766EE000F907D6 /* LoginSDKResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LoginSDKResource.bundle; sourceTree = "<group>"; };
 		F4B50A951D766EE000F907D6 /* MyLoginTest.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLoginTest.pch; sourceTree = "<group>"; };
-		F4B50A971D766EE000F907D6 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F4B50A981D766EE000F907D6 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F4B50A971D766EE000F907D6 /* GuidViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuidViewController.h; sourceTree = "<group>"; };
+		F4B50A981D766EE000F907D6 /* GuidViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuidViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,8 +211,8 @@
 		F4B50A961D766EE000F907D6 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				F4B50A971D766EE000F907D6 /* ViewController.h */,
-				F4B50A981D766EE000F907D6 /* ViewController.m */,
+				F4B50A971D766EE000F907D6 /* GuidViewController.h */,
+				F4B50A981D766EE000F907D6 /* GuidViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -294,7 +294,7 @@
 				F4B50A9B1D766EE000F907D6 /* NSData+CommonCrypto.m in Sources */,
 				F4B50A9A1D766EE000F907D6 /* CEBase64.m in Sources */,
 				F4B50AA11D766EE000F907D6 /* LoginViewController.m in Sources */,
-				F4B50AA31D766EE000F907D6 /* ViewController.m in Sources */,
+				F4B50AA31D766EE000F907D6 /* GuidViewController.m in Sources */,
 				F4B50A9D1D766EE000F907D6 /* KeyChainManager.m in Sources */,
 				F4B50A631D766C4E00F907D6 /* main.m in Sources */,
 				F4B50A9F1D766EE000F907D6 /* VerifyTools.m in Sources */,
