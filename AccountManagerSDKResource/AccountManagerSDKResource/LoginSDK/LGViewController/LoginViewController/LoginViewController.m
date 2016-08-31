@@ -59,9 +59,8 @@
 
 -(void)handelLogin: (NSString *)token {
     if (_loginSuccessBlock != nil) {
-        _loginSuccessBlock(token);
         [self dismissViewControllerAnimated:YES completion:^{
-            
+             _loginSuccessBlock(token);
         }];
     }
 }

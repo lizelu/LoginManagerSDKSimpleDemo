@@ -77,7 +77,7 @@
 
 - (void)reqLogin {
     if (self.loginSuccessBlock != nil) {
-        self.loginSuccessBlock(@"12345678");
+        self.loginSuccessBlock(self.userName);
         [self saveKeyChain];
     }
 }

@@ -30,7 +30,7 @@
     if (_loginAPI != nil) {
         __weak typeof (self) weak_self = self;
         [_loginAPI checkHaveLogin:^(NSString *token) {
-            [weak_self presentMainViewControllerWithText:[NSString stringWithFormat:@"二次登录成功：token = %@", token]];
+            [weak_self presentMainViewControllerWithText:token];
         } noAccountBlock:^{
             [weak_self presentLoginViewController];
         }];
@@ -41,7 +41,7 @@
     
     __weak typeof (self) weak_self = self;
     UIViewController *vc = [_loginAPI getLoginViewController:^(NSString *token) {
-        [weak_self presentMainViewControllerWithText:[NSString stringWithFormat:@"首次登录成功：token = %@", token]];
+        [weak_self presentMainViewControllerWithText:token];
     }];
     
     [self presentViewController:vc animated:YES completion:^{}];
@@ -50,7 +50,7 @@
 - (void)presentMainViewControllerWithText: (NSString *)text {
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
     MainViewController * vc = [storyboard instantiateViewControllerWithIdentifier:@"MainViewController"];
-    [vc setTipLableText:text];
+    [vc setTipLableText:[NSString stringWithFormat:@"登录成功: %@", text]];
     [self presentViewController:vc animated:NO completion:^{
         
     }];

@@ -37,6 +37,11 @@
  */
 - (void)checkHaveLogin: (LoginBlock)loginSuccessBlock
         noAccountBlock: (NoAccountLoginBlock) noAccountBlock;
+
+/**
+ *  注销
+ */
+- (void)logout;
 @end
 
 

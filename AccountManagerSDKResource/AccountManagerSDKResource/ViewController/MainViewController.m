@@ -10,6 +10,7 @@
 
 @interface MainViewController ()
 @property (strong, nonatomic) IBOutlet UILabel *tipLabel;
+@property (strong, nonnull) NSString *tipLableString;
 
 @end
 
@@ -20,10 +21,17 @@
     // Do any additional setup after loading the view.
 }
 
+-(void)viewWillAppear:(BOOL)animated {
+    self.tipLabel.text = _tipLableString;
+}
+
 - (void)setTipLableText: (NSString *)text {
-    self.tipLabel.text = text;
+    self.tipLableString = text;
 }
 - (IBAction)tapLoginOutButton:(id)sender {
+    
+    [[LoginAPI shareManager] logout];
+    
     [self dismissViewControllerAnimated:YES completion:^{
     }];
 }

@@ -11,12 +11,12 @@
 #define ExpressionPassword @"^(?![0-9]+$)(?![a-zA-Z]+$)[a-zA-Z0-9]{6,15}"
 
 @implementation VerifyTools
-#pragma mark 正则匹配用户姓名（手机号）
+#pragma mark 正则匹配用户姓名
 + (BOOL)verifyUserName:(NSString *)userName {
     return [VerifyTools verifyText :userName expression: ExpressionTelNumber];
 }
 
-#pragma mark 正则匹配用户密码（6-15位，数字字母组成）
+#pragma mark 正则匹配用户密码
 + (BOOL)verifyPassword:(NSString *)password {
     return [VerifyTools verifyText :password expression: ExpressionPassword];
 }

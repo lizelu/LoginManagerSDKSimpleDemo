@@ -16,6 +16,10 @@
 #define LOGIN_STORYBOARD_NAME @"LoginSDK"
 #define LOGIN_VIEWCONTROLLER_NAME @"LoginViewController"
 
+#define LOGOUT_KEY_TAG @"LogoutKeyTag" // 0-注销，1-已登录
+#define HAVE_LOGIN @"1"
+#define NO_LOGIN @"0"
+
 @interface LoginAPI()
 @end
 
@@ -32,15 +36,21 @@
 - (instancetype)init {
     self = [super init];
     if (self) {
-       
     }
     return self;
 }
 
 - (void)checkHaveLogin: (LoginBlock)loginSuccessBlock
         noAccountBlock: (NoAccountLoginBlock) noAccountBlock {
+    //判断用户是否已注销
+    if ([self isLogout]) {
+        noAccountBlock();
+        return;
+    }
+    
     [[AccountManager shareManager] checkHaveLogin:^(NSString *token) {
         loginSuccessBlock(token);
+        [self setLoginTag];
     } noAccountBlock:^{
         noAccountBlock();
     }];
@@ -52,10 +62,38 @@
     [loginVC setLoginResult:^(NSString *token) {
         loginBlock(token);
         self.token = token;
+        [self setLoginTag];
     }];
     
     return loginVC;
 }
+
+
+- (void)logout {
+    [[NSUserDefaults standardUserDefaults] setObject:NO_LOGIN forKey:LOGOUT_KEY_TAG];
+}
+
+/**
+ *  判断是否已注销
+ *
+ *  @return YES - 已注销， NO - 已登录
+ */
+- (Boolean)isLogout {
+    NSString *tag = [[NSUserDefaults standardUserDefaults] objectForKey:LOGOUT_KEY_TAG];
+    if (tag != nil) {
+        if ([tag isEqualToString:HAVE_LOGIN]) {
+            return NO;
+        } else {
+            return YES;
+        }
+    }
+    return YES;
+}
+
+- (void)setLoginTag {
+    [[NSUserDefaults standardUserDefaults] setObject:HAVE_LOGIN forKey:LOGOUT_KEY_TAG];
+}
+
 
 - (UIViewController *)getVCFromLoginSDKBundle {
     NSLog(@"%@", [NSBundle allBundles]);
