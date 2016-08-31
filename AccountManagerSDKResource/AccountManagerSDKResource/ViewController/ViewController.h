@@ -1,8 +1,8 @@
 //
 //  ViewController.h
-//  AccountManagerSDKResource
+//  MyLoginTest
 //
-//  Created by Mr.LuDashi on 16/8/31.
+//  Created by Mr.LuDashi on 16/8/26.
 //  Copyright © 2016年 ZeluLi. All rights reserved.
 //
 
@@ -10,6 +10,4 @@
 
 @interface ViewController : UIViewController
 
-
 @end
-

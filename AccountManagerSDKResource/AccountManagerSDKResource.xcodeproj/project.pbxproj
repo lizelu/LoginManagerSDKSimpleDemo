@@ -9,10 +9,20 @@
 /* Begin PBXBuildFile section */
 		F4B50A631D766C4E00F907D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B50A621D766C4E00F907D6 /* main.m */; };
 		F4B50A661D766C4E00F907D6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B50A651D766C4E00F907D6 /* AppDelegate.m */; };
-		F4B50A691D766C4E00F907D6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B50A681D766C4E00F907D6 /* ViewController.m */; };
 		F4B50A6C1D766C4E00F907D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4B50A6A1D766C4E00F907D6 /* Main.storyboard */; };
 		F4B50A6E1D766C4E00F907D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4B50A6D1D766C4E00F907D6 /* Assets.xcassets */; };
 		F4B50A711D766C4E00F907D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4B50A6F1D766C4E00F907D6 /* LaunchScreen.storyboard */; };
+		F4B50A991D766EE000F907D6 /* AESCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B50A7B1D766EE000F907D6 /* AESCrypt.m */; };
+		F4B50A9A1D766EE000F907D6 /* CEBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B50A7D1D766EE000F907D6 /* CEBase64.m */; };
+		F4B50A9B1D766EE000F907D6 /* NSData+CommonCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B50A7F1D766EE000F907D6 /* NSData+CommonCrypto.m */; };
+		F4B50A9C1D766EE000F907D6 /* AccountManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B50A821D766EE000F907D6 /* AccountManager.m */; };
+		F4B50A9D1D766EE000F907D6 /* KeyChainManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B50A841D766EE000F907D6 /* KeyChainManager.m */; };
+		F4B50A9E1D766EE000F907D6 /* LoginSDK.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4B50A891D766EE000F907D6 /* LoginSDK.storyboard */; };
+		F4B50A9F1D766EE000F907D6 /* VerifyTools.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B50A8C1D766EE000F907D6 /* VerifyTools.m */; };
+		F4B50AA01D766EE000F907D6 /* LoginAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B50A8F1D766EE000F907D6 /* LoginAPI.m */; };
+		F4B50AA11D766EE000F907D6 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B50A931D766EE000F907D6 /* LoginViewController.m */; };
+		F4B50AA21D766EE000F907D6 /* LoginSDKResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F4B50A941D766EE000F907D6 /* LoginSDKResource.bundle */; };
+		F4B50AA31D766EE000F907D6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B50A981D766EE000F907D6 /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +30,32 @@
 		F4B50A621D766C4E00F907D6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F4B50A641D766C4E00F907D6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F4B50A651D766C4E00F907D6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F4B50A671D766C4E00F907D6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F4B50A681D766C4E00F907D6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		F4B50A6B1D766C4E00F907D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F4B50A6D1D766C4E00F907D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4B50A701D766C4E00F907D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F4B50A721D766C4E00F907D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4B50A7A1D766EE000F907D6 /* AESCrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AESCrypt.h; sourceTree = "<group>"; };
+		F4B50A7B1D766EE000F907D6 /* AESCrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AESCrypt.m; sourceTree = "<group>"; };
+		F4B50A7C1D766EE000F907D6 /* CEBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CEBase64.h; sourceTree = "<group>"; };
+		F4B50A7D1D766EE000F907D6 /* CEBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CEBase64.m; sourceTree = "<group>"; };
+		F4B50A7E1D766EE000F907D6 /* NSData+CommonCrypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+CommonCrypto.h"; sourceTree = "<group>"; };
+		F4B50A7F1D766EE000F907D6 /* NSData+CommonCrypto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+CommonCrypto.m"; sourceTree = "<group>"; };
+		F4B50A811D766EE000F907D6 /* AccountManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountManager.h; sourceTree = "<group>"; };
+		F4B50A821D766EE000F907D6 /* AccountManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountManager.m; sourceTree = "<group>"; };
+		F4B50A831D766EE000F907D6 /* KeyChainManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyChainManager.h; sourceTree = "<group>"; };
+		F4B50A841D766EE000F907D6 /* KeyChainManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyChainManager.m; sourceTree = "<group>"; };
+		F4B50A851D766EE000F907D6 /* LoginManagerProtocal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginManagerProtocal.h; sourceTree = "<group>"; };
+		F4B50A891D766EE000F907D6 /* LoginSDK.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginSDK.storyboard; sourceTree = "<group>"; };
+		F4B50A8B1D766EE000F907D6 /* VerifyTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerifyTools.h; sourceTree = "<group>"; };
+		F4B50A8C1D766EE000F907D6 /* VerifyTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerifyTools.m; sourceTree = "<group>"; };
+		F4B50A8E1D766EE000F907D6 /* LoginAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginAPI.h; sourceTree = "<group>"; };
+		F4B50A8F1D766EE000F907D6 /* LoginAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginAPI.m; sourceTree = "<group>"; };
+		F4B50A921D766EE000F907D6 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		F4B50A931D766EE000F907D6 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		F4B50A941D766EE000F907D6 /* LoginSDKResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LoginSDKResource.bundle; sourceTree = "<group>"; };
+		F4B50A951D766EE000F907D6 /* MyLoginTest.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLoginTest.pch; sourceTree = "<group>"; };
+		F4B50A971D766EE000F907D6 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F4B50A981D766EE000F907D6 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,14 +88,15 @@
 		F4B50A601D766C4E00F907D6 /* AccountManagerSDKResource */ = {
 			isa = PBXGroup;
 			children = (
+				F4B50A781D766EE000F907D6 /* LoginSDK */,
+				F4B50A961D766EE000F907D6 /* ViewController */,
 				F4B50A641D766C4E00F907D6 /* AppDelegate.h */,
 				F4B50A651D766C4E00F907D6 /* AppDelegate.m */,
-				F4B50A671D766C4E00F907D6 /* ViewController.h */,
-				F4B50A681D766C4E00F907D6 /* ViewController.m */,
 				F4B50A6A1D766C4E00F907D6 /* Main.storyboard */,
 				F4B50A6D1D766C4E00F907D6 /* Assets.xcassets */,
 				F4B50A6F1D766C4E00F907D6 /* LaunchScreen.storyboard */,
 				F4B50A721D766C4E00F907D6 /* Info.plist */,
+				F4B50A951D766EE000F907D6 /* MyLoginTest.pch */,
 				F4B50A611D766C4E00F907D6 /* Supporting Files */,
 			);
 			path = AccountManagerSDKResource;
@@ -77,6 +108,113 @@
 				F4B50A621D766C4E00F907D6 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F4B50A781D766EE000F907D6 /* LoginSDK */ = {
+			isa = PBXGroup;
+			children = (
+				F4B50A791D766EE000F907D6 /* LGEncrypt */,
+				F4B50A801D766EE000F907D6 /* LGManager */,
+				F4B50A861D766EE000F907D6 /* LGModel */,
+				F4B50A871D766EE000F907D6 /* LGNetworkRequest */,
+				F4B50A881D766EE000F907D6 /* LGResource */,
+				F4B50A8A1D766EE000F907D6 /* LGTools */,
+				F4B50A8D1D766EE000F907D6 /* LGUserInterFace */,
+				F4B50A901D766EE000F907D6 /* LGViewController */,
+				F4B50A941D766EE000F907D6 /* LoginSDKResource.bundle */,
+			);
+			path = LoginSDK;
+			sourceTree = "<group>";
+		};
+		F4B50A791D766EE000F907D6 /* LGEncrypt */ = {
+			isa = PBXGroup;
+			children = (
+				F4B50A7A1D766EE000F907D6 /* AESCrypt.h */,
+				F4B50A7B1D766EE000F907D6 /* AESCrypt.m */,
+				F4B50A7C1D766EE000F907D6 /* CEBase64.h */,
+				F4B50A7D1D766EE000F907D6 /* CEBase64.m */,
+				F4B50A7E1D766EE000F907D6 /* NSData+CommonCrypto.h */,
+				F4B50A7F1D766EE000F907D6 /* NSData+CommonCrypto.m */,
+			);
+			path = LGEncrypt;
+			sourceTree = "<group>";
+		};
+		F4B50A801D766EE000F907D6 /* LGManager */ = {
+			isa = PBXGroup;
+			children = (
+				F4B50A811D766EE000F907D6 /* AccountManager.h */,
+				F4B50A821D766EE000F907D6 /* AccountManager.m */,
+				F4B50A831D766EE000F907D6 /* KeyChainManager.h */,
+				F4B50A841D766EE000F907D6 /* KeyChainManager.m */,
+				F4B50A851D766EE000F907D6 /* LoginManagerProtocal.h */,
+			);
+			path = LGManager;
+			sourceTree = "<group>";
+		};
+		F4B50A861D766EE000F907D6 /* LGModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LGModel;
+			sourceTree = "<group>";
+		};
+		F4B50A871D766EE000F907D6 /* LGNetworkRequest */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LGNetworkRequest;
+			sourceTree = "<group>";
+		};
+		F4B50A881D766EE000F907D6 /* LGResource */ = {
+			isa = PBXGroup;
+			children = (
+				F4B50A891D766EE000F907D6 /* LoginSDK.storyboard */,
+			);
+			path = LGResource;
+			sourceTree = "<group>";
+		};
+		F4B50A8A1D766EE000F907D6 /* LGTools */ = {
+			isa = PBXGroup;
+			children = (
+				F4B50A8B1D766EE000F907D6 /* VerifyTools.h */,
+				F4B50A8C1D766EE000F907D6 /* VerifyTools.m */,
+			);
+			path = LGTools;
+			sourceTree = "<group>";
+		};
+		F4B50A8D1D766EE000F907D6 /* LGUserInterFace */ = {
+			isa = PBXGroup;
+			children = (
+				F4B50A8E1D766EE000F907D6 /* LoginAPI.h */,
+				F4B50A8F1D766EE000F907D6 /* LoginAPI.m */,
+			);
+			path = LGUserInterFace;
+			sourceTree = "<group>";
+		};
+		F4B50A901D766EE000F907D6 /* LGViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F4B50A911D766EE000F907D6 /* LoginViewController */,
+			);
+			path = LGViewController;
+			sourceTree = "<group>";
+		};
+		F4B50A911D766EE000F907D6 /* LoginViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F4B50A921D766EE000F907D6 /* LoginViewController.h */,
+				F4B50A931D766EE000F907D6 /* LoginViewController.m */,
+			);
+			path = LoginViewController;
+			sourceTree = "<group>";
+		};
+		F4B50A961D766EE000F907D6 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F4B50A971D766EE000F907D6 /* ViewController.h */,
+				F4B50A981D766EE000F907D6 /* ViewController.m */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +275,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4B50A711D766C4E00F907D6 /* LaunchScreen.storyboard in Resources */,
+				F4B50A9E1D766EE000F907D6 /* LoginSDK.storyboard in Resources */,
 				F4B50A6E1D766C4E00F907D6 /* Assets.xcassets in Resources */,
+				F4B50AA21D766EE000F907D6 /* LoginSDKResource.bundle in Resources */,
 				F4B50A6C1D766C4E00F907D6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -149,9 +289,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4B50A691D766C4E00F907D6 /* ViewController.m in Sources */,
 				F4B50A661D766C4E00F907D6 /* AppDelegate.m in Sources */,
+				F4B50A991D766EE000F907D6 /* AESCrypt.m in Sources */,
+				F4B50A9B1D766EE000F907D6 /* NSData+CommonCrypto.m in Sources */,
+				F4B50A9A1D766EE000F907D6 /* CEBase64.m in Sources */,
+				F4B50AA11D766EE000F907D6 /* LoginViewController.m in Sources */,
+				F4B50AA31D766EE000F907D6 /* ViewController.m in Sources */,
+				F4B50A9D1D766EE000F907D6 /* KeyChainManager.m in Sources */,
 				F4B50A631D766C4E00F907D6 /* main.m in Sources */,
+				F4B50A9F1D766EE000F907D6 /* VerifyTools.m in Sources */,
+				F4B50A9C1D766EE000F907D6 /* AccountManager.m in Sources */,
+				F4B50AA01D766EE000F907D6 /* LoginAPI.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,7 +411,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/AccountManagerSDKResource/MyLoginTest.pch";
 				INFOPLIST_FILE = AccountManagerSDKResource/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ZeluLi.AccountManagerSDKResource;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -274,7 +425,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/AccountManagerSDKResource/MyLoginTest.pch";
 				INFOPLIST_FILE = AccountManagerSDKResource/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ZeluLi.AccountManagerSDKResource;
 				PRODUCT_NAME = "$(TARGET_NAME)";

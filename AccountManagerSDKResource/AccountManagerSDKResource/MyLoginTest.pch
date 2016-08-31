@@ -1,0 +1,23 @@
+//
+//  MyLoginTest.pch
+//  MyLoginTest
+//
+//  Created by Mr.LuDashi on 16/8/25.
+//  Copyright © 2016年 ZeluLi. All rights reserved.
+//
+
+#ifndef MyLoginTest_pch
+#define MyLoginTest_pch
+
+#ifdef DEBUG
+#define NSLog(...) NSLog(__VA_ARGS__)
+#define debugMethod() NSLog(@"%s", __func__)
+#else
+#define NSLog(...)
+#define debugMethod()
+#endif
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* MyLoginTest_pch */
