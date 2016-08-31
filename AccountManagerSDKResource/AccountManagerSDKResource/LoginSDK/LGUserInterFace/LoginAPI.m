@@ -9,9 +9,12 @@
 #import "LoginAPI.h"
 #import "LoginViewController.h"
 #import "AccountManager.h"
-#define MYBUNDLE_NAME   @"LoginSDKResource.bundle"
-#define MYBUNDLE_PATH   [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent: MYBUNDLE_NAME]
-#define MYBUNDLE        [NSBundle bundleWithPath: MYBUNDLE_PATH]
+#define LOGIN_SDK_BUNDLE_NAME   @"LoginSDKResource.bundle"
+#define LOGIN_SDK_BUNDLE_PATH   [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent: LOGIN_SDK_BUNDLE_NAME]
+#define LOGIN_SDK_BUNDLE        [NSBundle bundleWithPath: LOGIN_SDK_BUNDLE_PATH]
+
+#define LOGIN_STORYBOARD_NAME @"LoginSDK"
+#define LOGIN_VIEWCONTROLLER_NAME @"LoginViewController"
 
 @interface LoginAPI()
 @end
@@ -26,15 +29,13 @@
     return loginManagerObject;
 }
 
-- (instancetype)init
-{
+- (instancetype)init {
     self = [super init];
     if (self) {
        
     }
     return self;
 }
-
 
 - (void)checkHaveLogin: (LoginBlock)loginSuccessBlock
         noAccountBlock: (NoAccountLoginBlock) noAccountBlock {
@@ -45,16 +46,10 @@
     }];
 }
 
-
 - (UIViewController *)getLoginViewController: (LoginBlock) loginBlock
                                 failureBlock: (LoginFailureBlock) failBlock {
-    NSString *bundleName =  @"LoginSDKResource.bundle";
-    NSString *bundlePath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent: bundleName];
-    NSBundle *resourceBundle = [NSBundle bundleWithPath: bundlePath];
+    LoginViewController *loginVC = (LoginViewController *)[self getVCFromMainBundle];
     
-    NSLog(@"%@", [NSBundle allBundles]);
-    UIStoryboard *loginStoryboard = [UIStoryboard storyboardWithName:@"LoginSDK" bundle:resourceBundle];
-    LoginViewController *loginVC = [loginStoryboard instantiateViewControllerWithIdentifier:@"LoginViewController"];
     [loginVC setLoginResult:^(NSString *token) {
         loginBlock(token);
         self.token = token;
@@ -63,7 +58,16 @@
     }];
     
     return loginVC;
-
 }
 
+- (UIViewController *)getVCFromLoginSDKBundle {
+    NSLog(@"%@", [NSBundle allBundles]);
+    UIStoryboard *loginStoryboard = [UIStoryboard storyboardWithName:LOGIN_STORYBOARD_NAME bundle:LOGIN_SDK_BUNDLE];
+    return [loginStoryboard instantiateViewControllerWithIdentifier:LOGIN_VIEWCONTROLLER_NAME];
+}
+
+- (UIViewController *) getVCFromMainBundle {
+    UIStoryboard *loginStoryboard = [UIStoryboard storyboardWithName:LOGIN_STORYBOARD_NAME bundle:[NSBundle mainBundle]];
+    return [loginStoryboard instantiateViewControllerWithIdentifier:LOGIN_VIEWCONTROLLER_NAME];
+}
 @end
