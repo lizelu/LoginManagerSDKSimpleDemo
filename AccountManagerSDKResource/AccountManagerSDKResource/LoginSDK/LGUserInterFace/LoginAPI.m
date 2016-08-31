@@ -9,7 +9,7 @@
 #import "LoginAPI.h"
 #import "LoginViewController.h"
 #import "AccountManager.h"
-#define LOGIN_SDK_BUNDLE_NAME   @"LoginSDKResource.bundle"
+#define LOGIN_SDK_BUNDLE_NAME   @"CreateLoginSDKResourceBundle.bundle"
 #define LOGIN_SDK_BUNDLE_PATH   [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent: LOGIN_SDK_BUNDLE_NAME]
 #define LOGIN_SDK_BUNDLE        [NSBundle bundleWithPath: LOGIN_SDK_BUNDLE_PATH]
 
@@ -57,7 +57,8 @@
 }
 
 - (UIViewController *)getLoginViewController: (LoginBlock) loginBlock {
-    LoginViewController *loginVC = (LoginViewController *)[self getVCFromMainBundle];
+    //LoginViewController *loginVC = (LoginViewController *)[self getVCFromMainBundle];
+    LoginViewController *loginVC = (LoginViewController *)[self getVCFromLoginSDKBundle];
     
     [loginVC setLoginResult:^(NSString *token) {
         loginBlock(token);
