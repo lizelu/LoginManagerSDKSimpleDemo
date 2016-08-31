@@ -13,7 +13,7 @@
 		F4B50A6E1D766C4E00F907D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4B50A6D1D766C4E00F907D6 /* Assets.xcassets */; };
 		F4B50A711D766C4E00F907D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4B50A6F1D766C4E00F907D6 /* LaunchScreen.storyboard */; };
 		F4B50A991D766EE000F907D6 /* AESCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B50A7B1D766EE000F907D6 /* AESCrypt.m */; };
-		F4B50A9A1D766EE000F907D6 /* CEBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B50A7D1D766EE000F907D6 /* CEBase64.m */; };
+		F4B50A9A1D766EE000F907D6 /* LGBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B50A7D1D766EE000F907D6 /* LGBase64.m */; };
 		F4B50A9B1D766EE000F907D6 /* NSData+CommonCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B50A7F1D766EE000F907D6 /* NSData+CommonCrypto.m */; };
 		F4B50A9C1D766EE000F907D6 /* AccountManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B50A821D766EE000F907D6 /* AccountManager.m */; };
 		F4B50A9D1D766EE000F907D6 /* KeyChainManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B50A841D766EE000F907D6 /* KeyChainManager.m */; };
@@ -23,6 +23,7 @@
 		F4B50AA11D766EE000F907D6 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B50A931D766EE000F907D6 /* LoginViewController.m */; };
 		F4B50AA21D766EE000F907D6 /* LoginSDKResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F4B50A941D766EE000F907D6 /* LoginSDKResource.bundle */; };
 		F4B50AA31D766EE000F907D6 /* GuidViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B50A981D766EE000F907D6 /* GuidViewController.m */; };
+		F4B50AA61D7678F300F907D6 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B50AA51D7678F300F907D6 /* MainViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,8 +37,8 @@
 		F4B50A721D766C4E00F907D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4B50A7A1D766EE000F907D6 /* AESCrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AESCrypt.h; sourceTree = "<group>"; };
 		F4B50A7B1D766EE000F907D6 /* AESCrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AESCrypt.m; sourceTree = "<group>"; };
-		F4B50A7C1D766EE000F907D6 /* CEBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CEBase64.h; sourceTree = "<group>"; };
-		F4B50A7D1D766EE000F907D6 /* CEBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CEBase64.m; sourceTree = "<group>"; };
+		F4B50A7C1D766EE000F907D6 /* LGBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGBase64.h; sourceTree = "<group>"; };
+		F4B50A7D1D766EE000F907D6 /* LGBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGBase64.m; sourceTree = "<group>"; };
 		F4B50A7E1D766EE000F907D6 /* NSData+CommonCrypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+CommonCrypto.h"; sourceTree = "<group>"; };
 		F4B50A7F1D766EE000F907D6 /* NSData+CommonCrypto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+CommonCrypto.m"; sourceTree = "<group>"; };
 		F4B50A811D766EE000F907D6 /* AccountManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountManager.h; sourceTree = "<group>"; };
@@ -56,6 +57,8 @@
 		F4B50A951D766EE000F907D6 /* MyLoginTest.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLoginTest.pch; sourceTree = "<group>"; };
 		F4B50A971D766EE000F907D6 /* GuidViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuidViewController.h; sourceTree = "<group>"; };
 		F4B50A981D766EE000F907D6 /* GuidViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuidViewController.m; sourceTree = "<group>"; };
+		F4B50AA41D7678F300F907D6 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		F4B50AA51D7678F300F907D6 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,8 +134,8 @@
 			children = (
 				F4B50A7A1D766EE000F907D6 /* AESCrypt.h */,
 				F4B50A7B1D766EE000F907D6 /* AESCrypt.m */,
-				F4B50A7C1D766EE000F907D6 /* CEBase64.h */,
-				F4B50A7D1D766EE000F907D6 /* CEBase64.m */,
+				F4B50A7C1D766EE000F907D6 /* LGBase64.h */,
+				F4B50A7D1D766EE000F907D6 /* LGBase64.m */,
 				F4B50A7E1D766EE000F907D6 /* NSData+CommonCrypto.h */,
 				F4B50A7F1D766EE000F907D6 /* NSData+CommonCrypto.m */,
 			);
@@ -213,6 +216,8 @@
 			children = (
 				F4B50A971D766EE000F907D6 /* GuidViewController.h */,
 				F4B50A981D766EE000F907D6 /* GuidViewController.m */,
+				F4B50AA41D7678F300F907D6 /* MainViewController.h */,
+				F4B50AA51D7678F300F907D6 /* MainViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -292,10 +297,11 @@
 				F4B50A661D766C4E00F907D6 /* AppDelegate.m in Sources */,
 				F4B50A991D766EE000F907D6 /* AESCrypt.m in Sources */,
 				F4B50A9B1D766EE000F907D6 /* NSData+CommonCrypto.m in Sources */,
-				F4B50A9A1D766EE000F907D6 /* CEBase64.m in Sources */,
+				F4B50A9A1D766EE000F907D6 /* LGBase64.m in Sources */,
 				F4B50AA11D766EE000F907D6 /* LoginViewController.m in Sources */,
 				F4B50AA31D766EE000F907D6 /* GuidViewController.m in Sources */,
 				F4B50A9D1D766EE000F907D6 /* KeyChainManager.m in Sources */,
+				F4B50AA61D7678F300F907D6 /* MainViewController.m in Sources */,
 				F4B50A631D766C4E00F907D6 /* main.m in Sources */,
 				F4B50A9F1D766EE000F907D6 /* VerifyTools.m in Sources */,
 				F4B50A9C1D766EE000F907D6 /* AccountManager.m in Sources */,

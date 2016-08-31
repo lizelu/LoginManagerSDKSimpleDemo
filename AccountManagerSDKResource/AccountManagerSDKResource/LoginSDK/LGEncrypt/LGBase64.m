@@ -1,14 +1,10 @@
 //
-//  CEBase64.m
-//  CEPaySdk
-//
-//  Created by zzf073 on 15/7/6.
-//  Copyright (c) 2015年 zzf073. All rights reserved.
+//  LGBase64.m
 //
 
-#import "CEBase64.h"
+#import "LGBase64.h"
 
-@implementation CEBase64
+@implementation LGBase64
 
 +(NSString*)encodeStrToBase64Str:(NSString*)rawStr
 {

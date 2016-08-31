@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="LLn-cF-2dI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="WuK-sk-UNf">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Guid View Controller-->
@@ -13,51 +15,91 @@
                         <viewControllerLayoutGuide type="bottom" id="JKH-00-aMs"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ody-5P-wtS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hCD-uu-EYM">
-                                <rect key="frame" x="48" y="172" width="72" height="30"/>
-                                <state key="normal" title="PushLogin"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hCD-uu-EYM">
+                                <rect key="frame" x="90" y="533" width="195" height="48"/>
+                                <color key="backgroundColor" red="0.87058823529999996" green="0.57254901960000004" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="Edo-hx-K16"/>
+                                    <constraint firstAttribute="width" constant="195" id="O1h-VB-m4n"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="立即进入">
+                                    <color key="titleColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="tapLogin:" destination="WuK-sk-UNf" eventType="touchUpInside" id="E74-bb-oaz"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r9n-eS-jJR">
-                                <rect key="frame" x="57" y="240" width="387" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.25360925003947371" green="0.62866064806052302" blue="0.53632409378421064" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="JKH-00-aMs" firstAttribute="top" secondItem="hCD-uu-EYM" secondAttribute="bottom" constant="86" id="ZpM-qX-z65"/>
+                            <constraint firstItem="hCD-uu-EYM" firstAttribute="centerX" secondItem="ody-5P-wtS" secondAttribute="centerX" id="jeY-3Q-GBe"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="hiJ-vi-haM"/>
-                    <connections>
-                        <outlet property="loginStateLabel" destination="r9n-eS-jJR" id="abk-19-mJK"/>
-                    </connections>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iQc-6D-2qH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1365" y="405"/>
+            <point key="canvasLocation" x="1251" y="255"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="EPK-Sb-2TC">
+        <!--Main View Controller-->
+        <scene sceneID="zrj-OJ-rm7">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LLn-cF-2dI" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tfu-DH-lHU">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
+                <viewController storyboardIdentifier="MainViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Mcl-OZ-gzy" customClass="MainViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bbS-uh-YL8"/>
+                        <viewControllerLayoutGuide type="bottom" id="EkG-pf-IeM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gKO-et-lZL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tip" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bqw-ku-ljB">
+                                <rect key="frame" x="14" y="78" width="347" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="MCe-bs-5wr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YiR-pw-643">
+                                <rect key="frame" x="291" y="28" width="68" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="68" id="FAK-ZZ-pdM"/>
+                                    <constraint firstAttribute="height" constant="30" id="lZC-Pn-eoY"/>
+                                </constraints>
+                                <state key="normal" title="注销">
+                                    <color key="titleColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapLoginOutButton:" destination="Mcl-OZ-gzy" eventType="touchUpInside" id="LV7-u8-6Xz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="0.582494212962963" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="YiR-pw-643" firstAttribute="top" secondItem="bbS-uh-YL8" secondAttribute="bottom" constant="8" id="NVc-fk-JfG"/>
+                            <constraint firstItem="bqw-ku-ljB" firstAttribute="leading" secondItem="gKO-et-lZL" secondAttribute="leading" constant="14" id="YrP-3T-bcR"/>
+                            <constraint firstItem="bqw-ku-ljB" firstAttribute="top" secondItem="bbS-uh-YL8" secondAttribute="bottom" constant="58" id="cg0-RU-hWy"/>
+                            <constraint firstAttribute="trailing" secondItem="bqw-ku-ljB" secondAttribute="trailing" constant="14" id="lw0-Fp-8ZC"/>
+                            <constraint firstItem="YiR-pw-643" firstAttribute="trailing" secondItem="gKO-et-lZL" secondAttribute="trailingMargin" id="ztb-Zi-8iO"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <segue destination="WuK-sk-UNf" kind="relationship" relationship="rootViewController" id="lbm-0R-ScR"/>
+                        <outlet property="tipLabel" destination="bqw-ku-ljB" id="9Qp-qD-MNg"/>
                     </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9MU-go-ZlO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gQl-bi-5lP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="553" y="405"/>
+            <point key="canvasLocation" x="1649.5" y="254.5"/>
         </scene>
     </scenes>
 </document>

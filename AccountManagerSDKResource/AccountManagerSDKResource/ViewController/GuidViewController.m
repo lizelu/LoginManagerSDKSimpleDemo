@@ -7,14 +7,13 @@
 //
 
 #import "GuidViewController.h"
-#import "LoginAPI.h"
 
 @interface GuidViewController ()
-@property (strong, nonatomic) IBOutlet UILabel *loginStateLabel;
+
 @property (nonatomic, strong) LoginAPI *loginAPI;
 @end
 
-@implementation ViewController
+@implementation GuidViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -46,7 +45,6 @@
 
 
 - (void)tipText: (NSString *) text {
-    self.loginStateLabel.text = text;
 }
 
 - (void)didReceiveMemoryWarning {
