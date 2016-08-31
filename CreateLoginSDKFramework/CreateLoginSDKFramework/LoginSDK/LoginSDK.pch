@@ -1,0 +1,20 @@
+//
+//  LoginSDK.pch
+//  CreateLoginSDKFramework
+//
+//  Created by Mr.LuDashi on 16/8/31.
+//  Copyright © 2016年 ZeluLi. All rights reserved.
+//
+
+#ifndef LoginSDK_pch
+#define LoginSDK_pch
+
+#ifdef DEBUG
+#define NSLog(...) NSLog(__VA_ARGS__)
+#define debugMethod() NSLog(@"%s", __func__)
+#else
+#define NSLog(...)
+#define debugMethod()
+#endif
+
+#endif /* LoginSDK_pch */

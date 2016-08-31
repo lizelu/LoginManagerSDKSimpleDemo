@@ -1,0 +1,16 @@
+//
+//  LoginSDKAppOne.pch
+//  LoginSDKAppOne
+//
+//  Created by Mr.LuDashi on 16/8/31.
+//  Copyright © 2016年 ZeluLi. All rights reserved.
+//
+
+#ifndef LoginSDKAppOne_pch
+#define LoginSDKAppOne_pch
+#import <LoginSDK//LoginAPI.h>
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* LoginSDKAppOne_pch */

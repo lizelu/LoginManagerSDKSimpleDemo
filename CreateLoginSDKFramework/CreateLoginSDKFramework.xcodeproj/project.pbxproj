@@ -1,0 +1,432 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F4B50AF01D76BF3D00F907D6 /* AESCrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = F4B50AD51D76BF3D00F907D6 /* AESCrypt.h */; };
+		F4B50AF11D76BF3D00F907D6 /* AESCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B50AD61D76BF3D00F907D6 /* AESCrypt.m */; };
+		F4B50AF21D76BF3D00F907D6 /* LGBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = F4B50AD71D76BF3D00F907D6 /* LGBase64.h */; };
+		F4B50AF31D76BF3D00F907D6 /* LGBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B50AD81D76BF3D00F907D6 /* LGBase64.m */; };
+		F4B50AF41D76BF3D00F907D6 /* NSData+CommonCrypto.h in Headers */ = {isa = PBXBuildFile; fileRef = F4B50AD91D76BF3D00F907D6 /* NSData+CommonCrypto.h */; };
+		F4B50AF51D76BF3D00F907D6 /* NSData+CommonCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B50ADA1D76BF3D00F907D6 /* NSData+CommonCrypto.m */; };
+		F4B50AF61D76BF3D00F907D6 /* AccountManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F4B50ADC1D76BF3D00F907D6 /* AccountManager.h */; };
+		F4B50AF71D76BF3D00F907D6 /* AccountManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B50ADD1D76BF3D00F907D6 /* AccountManager.m */; };
+		F4B50AF81D76BF3D00F907D6 /* KeyChainManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F4B50ADE1D76BF3D00F907D6 /* KeyChainManager.h */; };
+		F4B50AF91D76BF3D00F907D6 /* KeyChainManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B50ADF1D76BF3D00F907D6 /* KeyChainManager.m */; };
+		F4B50AFA1D76BF3D00F907D6 /* LoginManagerProtocal.h in Headers */ = {isa = PBXBuildFile; fileRef = F4B50AE01D76BF3D00F907D6 /* LoginManagerProtocal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F4B50AFC1D76BF3D00F907D6 /* VerifyTools.h in Headers */ = {isa = PBXBuildFile; fileRef = F4B50AE61D76BF3D00F907D6 /* VerifyTools.h */; };
+		F4B50AFD1D76BF3D00F907D6 /* VerifyTools.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B50AE71D76BF3D00F907D6 /* VerifyTools.m */; };
+		F4B50AFE1D76BF3D00F907D6 /* LoginAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = F4B50AE91D76BF3D00F907D6 /* LoginAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F4B50AFF1D76BF3D00F907D6 /* LoginAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B50AEA1D76BF3D00F907D6 /* LoginAPI.m */; };
+		F4B50B001D76BF3D00F907D6 /* LoginViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = F4B50AED1D76BF3D00F907D6 /* LoginViewController.h */; };
+		F4B50B011D76BF3D00F907D6 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B50AEE1D76BF3D00F907D6 /* LoginViewController.m */; };
+		F4B50B031D76BF8600F907D6 /* LoginSDK.pch in Headers */ = {isa = PBXBuildFile; fileRef = F4B50B021D76BF8600F907D6 /* LoginSDK.pch */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F4B50AC71D76BE5800F907D6 /* CreateLoginSDKFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CreateLoginSDKFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4B50ACC1D76BE5800F907D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4B50AD51D76BF3D00F907D6 /* AESCrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AESCrypt.h; sourceTree = "<group>"; };
+		F4B50AD61D76BF3D00F907D6 /* AESCrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AESCrypt.m; sourceTree = "<group>"; };
+		F4B50AD71D76BF3D00F907D6 /* LGBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGBase64.h; sourceTree = "<group>"; };
+		F4B50AD81D76BF3D00F907D6 /* LGBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGBase64.m; sourceTree = "<group>"; };
+		F4B50AD91D76BF3D00F907D6 /* NSData+CommonCrypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+CommonCrypto.h"; sourceTree = "<group>"; };
+		F4B50ADA1D76BF3D00F907D6 /* NSData+CommonCrypto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+CommonCrypto.m"; sourceTree = "<group>"; };
+		F4B50ADC1D76BF3D00F907D6 /* AccountManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountManager.h; sourceTree = "<group>"; };
+		F4B50ADD1D76BF3D00F907D6 /* AccountManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountManager.m; sourceTree = "<group>"; };
+		F4B50ADE1D76BF3D00F907D6 /* KeyChainManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyChainManager.h; sourceTree = "<group>"; };
+		F4B50ADF1D76BF3D00F907D6 /* KeyChainManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyChainManager.m; sourceTree = "<group>"; };
+		F4B50AE01D76BF3D00F907D6 /* LoginManagerProtocal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginManagerProtocal.h; sourceTree = "<group>"; };
+		F4B50AE61D76BF3D00F907D6 /* VerifyTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerifyTools.h; sourceTree = "<group>"; };
+		F4B50AE71D76BF3D00F907D6 /* VerifyTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerifyTools.m; sourceTree = "<group>"; };
+		F4B50AE91D76BF3D00F907D6 /* LoginAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginAPI.h; sourceTree = "<group>"; };
+		F4B50AEA1D76BF3D00F907D6 /* LoginAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginAPI.m; sourceTree = "<group>"; };
+		F4B50AED1D76BF3D00F907D6 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		F4B50AEE1D76BF3D00F907D6 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		F4B50B021D76BF8600F907D6 /* LoginSDK.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginSDK.pch; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F4B50AC31D76BE5800F907D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F4B50ABD1D76BE5800F907D6 = {
+			isa = PBXGroup;
+			children = (
+				F4B50AC91D76BE5800F907D6 /* CreateLoginSDKFramework */,
+				F4B50AC81D76BE5800F907D6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F4B50AC81D76BE5800F907D6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F4B50AC71D76BE5800F907D6 /* CreateLoginSDKFramework.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F4B50AC91D76BE5800F907D6 /* CreateLoginSDKFramework */ = {
+			isa = PBXGroup;
+			children = (
+				F4B50AD21D76BF3D00F907D6 /* LoginSDK */,
+				F4B50ACC1D76BE5800F907D6 /* Info.plist */,
+			);
+			path = CreateLoginSDKFramework;
+			sourceTree = "<group>";
+		};
+		F4B50AD21D76BF3D00F907D6 /* LoginSDK */ = {
+			isa = PBXGroup;
+			children = (
+				F4B50AD41D76BF3D00F907D6 /* LGEncrypt */,
+				F4B50ADB1D76BF3D00F907D6 /* LGManager */,
+				F4B50AE11D76BF3D00F907D6 /* LGModel */,
+				F4B50AE21D76BF3D00F907D6 /* LGNetworkRequest */,
+				F4B50AE51D76BF3D00F907D6 /* LGTools */,
+				F4B50AE81D76BF3D00F907D6 /* LGUserInterFace */,
+				F4B50AEB1D76BF3D00F907D6 /* LGViewController */,
+				F4B50B021D76BF8600F907D6 /* LoginSDK.pch */,
+			);
+			path = LoginSDK;
+			sourceTree = "<group>";
+		};
+		F4B50AD41D76BF3D00F907D6 /* LGEncrypt */ = {
+			isa = PBXGroup;
+			children = (
+				F4B50AD51D76BF3D00F907D6 /* AESCrypt.h */,
+				F4B50AD61D76BF3D00F907D6 /* AESCrypt.m */,
+				F4B50AD71D76BF3D00F907D6 /* LGBase64.h */,
+				F4B50AD81D76BF3D00F907D6 /* LGBase64.m */,
+				F4B50AD91D76BF3D00F907D6 /* NSData+CommonCrypto.h */,
+				F4B50ADA1D76BF3D00F907D6 /* NSData+CommonCrypto.m */,
+			);
+			path = LGEncrypt;
+			sourceTree = "<group>";
+		};
+		F4B50ADB1D76BF3D00F907D6 /* LGManager */ = {
+			isa = PBXGroup;
+			children = (
+				F4B50ADC1D76BF3D00F907D6 /* AccountManager.h */,
+				F4B50ADD1D76BF3D00F907D6 /* AccountManager.m */,
+				F4B50ADE1D76BF3D00F907D6 /* KeyChainManager.h */,
+				F4B50ADF1D76BF3D00F907D6 /* KeyChainManager.m */,
+				F4B50AE01D76BF3D00F907D6 /* LoginManagerProtocal.h */,
+			);
+			path = LGManager;
+			sourceTree = "<group>";
+		};
+		F4B50AE11D76BF3D00F907D6 /* LGModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LGModel;
+			sourceTree = "<group>";
+		};
+		F4B50AE21D76BF3D00F907D6 /* LGNetworkRequest */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LGNetworkRequest;
+			sourceTree = "<group>";
+		};
+		F4B50AE51D76BF3D00F907D6 /* LGTools */ = {
+			isa = PBXGroup;
+			children = (
+				F4B50AE61D76BF3D00F907D6 /* VerifyTools.h */,
+				F4B50AE71D76BF3D00F907D6 /* VerifyTools.m */,
+			);
+			path = LGTools;
+			sourceTree = "<group>";
+		};
+		F4B50AE81D76BF3D00F907D6 /* LGUserInterFace */ = {
+			isa = PBXGroup;
+			children = (
+				F4B50AE91D76BF3D00F907D6 /* LoginAPI.h */,
+				F4B50AEA1D76BF3D00F907D6 /* LoginAPI.m */,
+			);
+			path = LGUserInterFace;
+			sourceTree = "<group>";
+		};
+		F4B50AEB1D76BF3D00F907D6 /* LGViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F4B50AEC1D76BF3D00F907D6 /* LoginViewController */,
+			);
+			path = LGViewController;
+			sourceTree = "<group>";
+		};
+		F4B50AEC1D76BF3D00F907D6 /* LoginViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F4B50AED1D76BF3D00F907D6 /* LoginViewController.h */,
+				F4B50AEE1D76BF3D00F907D6 /* LoginViewController.m */,
+			);
+			path = LoginViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F4B50AC41D76BE5800F907D6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4B50AFE1D76BF3D00F907D6 /* LoginAPI.h in Headers */,
+				F4B50AFA1D76BF3D00F907D6 /* LoginManagerProtocal.h in Headers */,
+				F4B50AFC1D76BF3D00F907D6 /* VerifyTools.h in Headers */,
+				F4B50AF21D76BF3D00F907D6 /* LGBase64.h in Headers */,
+				F4B50AF01D76BF3D00F907D6 /* AESCrypt.h in Headers */,
+				F4B50B001D76BF3D00F907D6 /* LoginViewController.h in Headers */,
+				F4B50AF61D76BF3D00F907D6 /* AccountManager.h in Headers */,
+				F4B50AF41D76BF3D00F907D6 /* NSData+CommonCrypto.h in Headers */,
+				F4B50B031D76BF8600F907D6 /* LoginSDK.pch in Headers */,
+				F4B50AF81D76BF3D00F907D6 /* KeyChainManager.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		F4B50AC61D76BE5800F907D6 /* CreateLoginSDKFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4B50ACF1D76BE5800F907D6 /* Build configuration list for PBXNativeTarget "CreateLoginSDKFramework" */;
+			buildPhases = (
+				F4B50AC21D76BE5800F907D6 /* Sources */,
+				F4B50AC31D76BE5800F907D6 /* Frameworks */,
+				F4B50AC41D76BE5800F907D6 /* Headers */,
+				F4B50AC51D76BE5800F907D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CreateLoginSDKFramework;
+			productName = CreateLoginSDKFramework;
+			productReference = F4B50AC71D76BE5800F907D6 /* CreateLoginSDKFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F4B50ABE1D76BE5800F907D6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = ZeluLi;
+				TargetAttributes = {
+					F4B50AC61D76BE5800F907D6 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = F4B50AC11D76BE5800F907D6 /* Build configuration list for PBXProject "CreateLoginSDKFramework" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F4B50ABD1D76BE5800F907D6;
+			productRefGroup = F4B50AC81D76BE5800F907D6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F4B50AC61D76BE5800F907D6 /* CreateLoginSDKFramework */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F4B50AC51D76BE5800F907D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F4B50AC21D76BE5800F907D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4B50B011D76BF3D00F907D6 /* LoginViewController.m in Sources */,
+				F4B50AFF1D76BF3D00F907D6 /* LoginAPI.m in Sources */,
+				F4B50AFD1D76BF3D00F907D6 /* VerifyTools.m in Sources */,
+				F4B50AF11D76BF3D00F907D6 /* AESCrypt.m in Sources */,
+				F4B50AF31D76BF3D00F907D6 /* LGBase64.m in Sources */,
+				F4B50AF51D76BF3D00F907D6 /* NSData+CommonCrypto.m in Sources */,
+				F4B50AF71D76BF3D00F907D6 /* AccountManager.m in Sources */,
+				F4B50AF91D76BF3D00F907D6 /* KeyChainManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F4B50ACD1D76BE5800F907D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F4B50ACE1D76BE5800F907D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F4B50AD01D76BE5800F907D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/CreateLoginSDKFramework/LoginSDK/LoginSDK.pch";
+				INFOPLIST_FILE = CreateLoginSDKFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				PRODUCT_BUNDLE_IDENTIFIER = ZeluLi.CreateLoginSDKFramework;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F4B50AD11D76BE5800F907D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/CreateLoginSDKFramework/LoginSDK/LoginSDK.pch";
+				INFOPLIST_FILE = CreateLoginSDKFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				PRODUCT_BUNDLE_IDENTIFIER = ZeluLi.CreateLoginSDKFramework;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F4B50AC11D76BE5800F907D6 /* Build configuration list for PBXProject "CreateLoginSDKFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4B50ACD1D76BE5800F907D6 /* Debug */,
+				F4B50ACE1D76BE5800F907D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4B50ACF1D76BE5800F907D6 /* Build configuration list for PBXNativeTarget "CreateLoginSDKFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4B50AD01D76BE5800F907D6 /* Debug */,
+				F4B50AD11D76BE5800F907D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F4B50ABE1D76BE5800F907D6 /* Project object */;
+}
