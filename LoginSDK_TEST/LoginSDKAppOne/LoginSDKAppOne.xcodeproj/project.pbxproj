@@ -34,6 +34,7 @@
 		F4B50B311D76C32800F907D6 /* LoginSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LoginSDK.framework; sourceTree = "<group>"; };
 		F4B50B351D76C42200F907D6 /* LoginSDKAppOne.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginSDKAppOne.pch; sourceTree = "<group>"; };
 		F4B50B391D76C8B000F907D6 /* LoginSDKResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LoginSDKResource.bundle; sourceTree = "<group>"; };
+		F4B50B6F1D76CE8D00F907D6 /* LoginSDKAppOne.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = LoginSDKAppOne.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +69,7 @@
 		F4B50B0F1D76C2AB00F907D6 /* LoginSDKAppOne */ = {
 			isa = PBXGroup;
 			children = (
+				F4B50B6F1D76CE8D00F907D6 /* LoginSDKAppOne.entitlements */,
 				F4B50B2E1D76C30300F907D6 /* Main.storyboard */,
 				F4B50B271D76C2E100F907D6 /* ViewController */,
 				F4B50B131D76C2AB00F907D6 /* AppDelegate.h */,
@@ -140,6 +142,12 @@
 				TargetAttributes = {
 					F4B50B0C1D76C2AB00F907D6 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = N5WRHCE748;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -287,6 +295,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LoginSDKAppOne/LoginSDKAppOne.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/LoginSDK";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/LoginSDKAppOne/LoginSDKAppOne.pch";
@@ -306,6 +316,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LoginSDKAppOne/LoginSDKAppOne.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/LoginSDK";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/LoginSDKAppOne/LoginSDKAppOne.pch";
@@ -340,6 +352,7 @@
 				F4B50B261D76C2AB00F907D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

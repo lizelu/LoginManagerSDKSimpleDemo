@@ -9,7 +9,6 @@
 #import <Foundation/Foundation.h>
 #import "LoginManagerProtocal.h"
 #import <UIKit/UIKit.h>
-#define LOGIN_SDK_BUNDLE_NAME   @"CreateLoginSDKResourceBundle.bundle"
 
 @interface LoginAPI : NSObject<LoginManagerProtocal>
 @property (strong, nonatomic) NSString * token;

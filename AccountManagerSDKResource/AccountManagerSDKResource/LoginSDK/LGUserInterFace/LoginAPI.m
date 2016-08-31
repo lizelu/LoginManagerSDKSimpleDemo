@@ -36,6 +36,7 @@
 - (instancetype)init {
     self = [super init];
     if (self) {
+        [self setLoginTag];
     }
     return self;
 }

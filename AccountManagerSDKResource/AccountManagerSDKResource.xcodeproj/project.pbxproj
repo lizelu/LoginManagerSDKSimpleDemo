@@ -59,6 +59,7 @@
 		F4B50AA41D7678F300F907D6 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		F4B50AA51D7678F300F907D6 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		F4B50B3B1D76C96800F907D6 /* LoginSDKResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LoginSDKResource.bundle; sourceTree = "<group>"; };
+		F4B50B711D76CFC800F907D6 /* AccountManagerSDKResource.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = AccountManagerSDKResource.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +92,7 @@
 		F4B50A601D766C4E00F907D6 /* AccountManagerSDKResource */ = {
 			isa = PBXGroup;
 			children = (
+				F4B50B711D76CFC800F907D6 /* AccountManagerSDKResource.entitlements */,
 				F4B50A781D766EE000F907D6 /* LoginSDK */,
 				F4B50A961D766EE000F907D6 /* ViewController */,
 				F4B50A641D766C4E00F907D6 /* AppDelegate.h */,
@@ -253,6 +255,12 @@
 				TargetAttributes = {
 					F4B50A5D1D766C4D00F907D6 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = N5WRHCE748;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -417,6 +425,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AccountManagerSDKResource/AccountManagerSDKResource.entitlements;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/AccountManagerSDKResource/MyLoginTest.pch";
 				INFOPLIST_FILE = AccountManagerSDKResource/Info.plist;
@@ -431,6 +440,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AccountManagerSDKResource/AccountManagerSDKResource.entitlements;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/AccountManagerSDKResource/MyLoginTest.pch";
 				INFOPLIST_FILE = AccountManagerSDKResource/Info.plist;
@@ -460,6 +470,7 @@
 				F4B50A771D766C4E00F907D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
