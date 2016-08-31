@@ -42,6 +42,13 @@
  *  注销
  */
 - (void)logout;
+
+/**
+ *  判断是否已注销
+ *
+ *  @return YES - 已注销， NO - 已登录
+ */
+- (Boolean)isLogout;
 @end
 
 

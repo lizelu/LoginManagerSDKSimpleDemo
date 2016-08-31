@@ -61,6 +61,7 @@
 
 -(void)handelLogin: (NSString *)token {
     if (_loginSuccessBlock != nil) {
+        [self.view endEditing:YES];
         [self dismissViewControllerAnimated:YES completion:^{
              _loginSuccessBlock(token);
         }];

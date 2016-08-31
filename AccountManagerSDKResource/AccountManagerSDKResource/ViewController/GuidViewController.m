@@ -21,18 +21,24 @@
     _loginAPI = [LoginAPI shareManager];
 }
 
-- (IBAction)tapLogin:(id)sender {
-    [self checkHaveLogin];
+-(void)viewDidAppear:(BOOL)animated {
+    [self checkHaveLogin:NO];
 }
 
-- (void)checkHaveLogin {
+- (IBAction)tapLogin:(id)sender {
+    [self checkHaveLogin:YES];
+}
+
+- (void)checkHaveLogin: (BOOL)isTapButton {
     
     if (_loginAPI != nil) {
         __weak typeof (self) weak_self = self;
         [_loginAPI checkHaveLogin:^(NSString *token) {
             [weak_self presentMainViewControllerWithText:token];
         } noAccountBlock:^{
-            [weak_self presentLoginViewController];
+            if (isTapButton) {
+                [weak_self presentLoginViewController];
+            }
         }];
     }
 }
@@ -51,7 +57,7 @@
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
     MainViewController * vc = [storyboard instantiateViewControllerWithIdentifier:@"MainViewController"];
     [vc setTipLableText:[NSString stringWithFormat:@"登录成功: %@", text]];
-    [self presentViewController:vc animated:YES completion:^{
+    [self presentViewController:vc animated:NO completion:^{
         
     }];
 }
