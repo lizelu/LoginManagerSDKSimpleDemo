@@ -7,14 +7,14 @@
     "01CB61FC87043A09DB951C42CDA9EE934507461E" : 0,
     "59B0DD3A0DC0B86D2A06DD4B68CBD1C997876614" : 0
   },
-  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "C165E571-5318-4BD1-AD54-E2792DEFD556",
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "BCB7D4E9-F10F-4DAB-9E2F-57E51A7DB5E2",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
     "01CB61FC87043A09DB951C42CDA9EE934507461E" : "LoginManagerSDKSimpleDemo\/",
     "59B0DD3A0DC0B86D2A06DD4B68CBD1C997876614" : ""
   },
-  "DVTSourceControlWorkspaceBlueprintNameKey" : "LoginSDKAppOne",
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "LoginSDKAppTwo",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
-  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "LoginSDKAppOne\/LoginSDKAppOne.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "LoginSDK_TEST\/LoginSDKAppTwo\/LoginSDKAppTwo.xcodeproj",
   "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/lizelu\/LoginManagerSDKSimpleDemo.git",
