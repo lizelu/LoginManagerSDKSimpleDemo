@@ -41,6 +41,8 @@
         [_accountManager loginWithUserName:_userNameTextField.text
                                 password:_passwordTextField.text];
         
+    } else {
+        [self tipText:@"请输入用户名或密码"];
     }
 }
 
