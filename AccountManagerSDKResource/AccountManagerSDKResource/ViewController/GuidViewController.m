@@ -7,6 +7,7 @@
 //
 
 #import "GuidViewController.h"
+#import "MainViewController.h"
 
 @interface GuidViewController ()
 
@@ -18,30 +19,43 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     _loginAPI = [LoginAPI shareManager];
+}
+
+- (IBAction)tapLogin:(id)sender {
     [self checkHaveLogin];
 }
 
 - (void)checkHaveLogin {
+    
     if (_loginAPI != nil) {
         __weak typeof (self) weak_self = self;
         [_loginAPI checkHaveLogin:^(NSString *token) {
-            [weak_self tipText:[NSString stringWithFormat:@"二次登录成功：token = %@", token]];
+            [weak_self presentMainViewControllerWithText:[NSString stringWithFormat:@"二次登录成功：token = %@", token]];
         } noAccountBlock:^{
-            [weak_self tipText:@"尚未有账号在此设备上登录过"];
+            [weak_self presentLoginViewController];
         }];
     }
 }
 
-- (IBAction)tapLogin:(id)sender {
-     __weak typeof (self) weak_self = self;
+- (void)presentLoginViewController {
+    
+    __weak typeof (self) weak_self = self;
     UIViewController *vc = [_loginAPI getLoginViewController:^(NSString *token) {
-        [weak_self tipText:[NSString stringWithFormat:@"首次登录成功：token = %@", token]];
-    } failureBlock:^(NSString *errorMessage) {
-        [weak_self tipText:errorMessage];
+        [weak_self presentMainViewControllerWithText:[NSString stringWithFormat:@"首次登录成功：token = %@", token]];
     }];
     
     [self presentViewController:vc animated:YES completion:^{}];
 }
+
+- (void)presentMainViewControllerWithText: (NSString *)text {
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+    MainViewController * vc = [storyboard instantiateViewControllerWithIdentifier:@"MainViewController"];
+    [vc setTipLableText:text];
+    [self presentViewController:vc animated:NO completion:^{
+        
+    }];
+}
+
 
 
 - (void)tipText: (NSString *) text {

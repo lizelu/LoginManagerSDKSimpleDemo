@@ -33,9 +33,33 @@
                                     <action selector="tapLogin:" destination="WuK-sk-UNf" eventType="touchUpInside" id="E74-bb-oaz"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WELCOME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="TQN-Ef-KhW">
+                                <rect key="frame" x="14" y="110" width="347" height="138"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="138" id="P2e-g8-WQp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AcademyEngravedLetPlain" family="Academy Engraved LET" pointSize="43"/>
+                                <color key="textColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App One" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A0c-14-OnV">
+                                <rect key="frame" x="90" y="211" width="195" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="THt-RC-n4Z"/>
+                                    <constraint firstAttribute="width" constant="195" id="k8c-ss-cfv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AcademyEngravedLetPlain" family="Academy Engraved LET" pointSize="28"/>
+                                <color key="textColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.25360925003947371" green="0.62866064806052302" blue="0.53632409378421064" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="A0c-14-OnV" firstAttribute="centerX" secondItem="TQN-Ef-KhW" secondAttribute="centerX" id="53e-9J-zxp"/>
+                            <constraint firstItem="A0c-14-OnV" firstAttribute="top" secondItem="0WC-h5-b1c" secondAttribute="bottom" constant="191" id="8xq-Q0-pg1"/>
+                            <constraint firstAttribute="trailing" secondItem="TQN-Ef-KhW" secondAttribute="trailing" constant="14" id="Bcc-Hj-h10"/>
+                            <constraint firstItem="TQN-Ef-KhW" firstAttribute="leading" secondItem="ody-5P-wtS" secondAttribute="leading" constant="14" id="DjY-jv-6Ai"/>
+                            <constraint firstItem="TQN-Ef-KhW" firstAttribute="top" secondItem="0WC-h5-b1c" secondAttribute="bottom" constant="90" id="HgH-4w-PC2"/>
                             <constraint firstItem="JKH-00-aMs" firstAttribute="top" secondItem="hCD-uu-EYM" secondAttribute="bottom" constant="86" id="ZpM-qX-z65"/>
                             <constraint firstItem="hCD-uu-EYM" firstAttribute="centerX" secondItem="ody-5P-wtS" secondAttribute="centerX" id="jeY-3Q-GBe"/>
                         </constraints>
@@ -46,7 +70,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iQc-6D-2qH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1251" y="255"/>
+            <point key="canvasLocation" x="1250.5" y="254.5"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="zrj-OJ-rm7">
@@ -60,12 +84,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tip" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bqw-ku-ljB">
-                                <rect key="frame" x="14" y="78" width="347" height="50"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="哈哈" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bqw-ku-ljB">
+                                <rect key="frame" x="14" y="78" width="347" height="209"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="MCe-bs-5wr"/>
+                                    <constraint firstAttribute="height" constant="209" id="MCe-bs-5wr"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
                                 <color key="textColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>

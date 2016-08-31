@@ -23,12 +23,10 @@
  *  首次登录，获取登录页面
  *
  *  @param loginBlock 登录成功后的Block
- *  @param failBlock  登录失败后的Block
  *
  *  @return 返回LoginViewController
  */
-- (UIViewController *)getLoginViewController: (LoginBlock)loginBlock
-                                failureBlock: (LoginFailureBlock) failBlock;
+- (UIViewController *)getLoginViewController: (LoginBlock)loginBlock;
 
 
 /**

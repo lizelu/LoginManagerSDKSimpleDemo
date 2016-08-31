@@ -14,10 +14,7 @@
  *  设置相应的Block回调
  *
  *  @param loginBlock  登录成功回调
- *  @param logoutBlock 注销成功回调
- *  @param failBlock   失败回调
  */
-- (void)setLoginResult: (LoginBlock)loginBlock
-          failureBlock: (LoginFailureBlock) failBlock;
+- (void)setLoginResult: (LoginBlock)loginBlock;
 @end
 

@@ -12,14 +12,10 @@
 @interface LoginViewController ()
 @property (strong, nonatomic) IBOutlet UITextField *userNameTextField;
 @property (strong, nonatomic) IBOutlet UITextField *passwordTextField;
-@property (strong, nonatomic) IBOutlet UILabel *loginStateLabel;
 @property (strong, nonatomic) IBOutlet UIButton *loginButton;
 
 @property (strong, nonatomic) AccountManager * accountManager;
-
 @property (nonatomic, strong) LoginBlock loginSuccessBlock;
-@property (nonatomic, strong) LoginFailureBlock loginFailureBlock;
-
 @property (strong, nonatomic) NSString *token;
 
 @end
@@ -34,10 +30,8 @@
 }
 
 #pragma makr - setter and getter
-- (void)setLoginResult: (LoginBlock)loginBlock
-          failureBlock: (LoginFailureBlock) failBlock {
+- (void)setLoginResult: (LoginBlock)loginBlock {
     self.loginSuccessBlock = loginBlock;
-    self.loginFailureBlock = failBlock;
 }
 
 - (IBAction)tapLoginButton:(id)sender {
@@ -66,7 +60,6 @@
 -(void)handelLogin: (NSString *)token {
     if (_loginSuccessBlock != nil) {
         _loginSuccessBlock(token);
-        [self tipText:@"已登录"];
         [self dismissViewControllerAnimated:YES completion:^{
             
         }];
@@ -78,16 +71,17 @@
         
     }];
 }
+- (IBAction)tapGestrueRecognize:(id)sender {
+    [self.view endEditing:YES];
+}
 
 -(Boolean) textFieldIsNull: (UITextField *) textFeild {
     return textFeild == nil || [textFeild.text isEqualToString:@""];
 }
 
 - (void)tipText: (NSString *)tip {
-    self.loginStateLabel.text = tip;
-    if (_loginFailureBlock != nil) {
-        _loginFailureBlock(tip);
-    }
+    UIAlertView *alter = [[UIAlertView alloc] initWithTitle:@"提示" message:tip delegate:nil cancelButtonTitle:@"好" otherButtonTitles:nil];
+    [alter show];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -46,15 +46,12 @@
     }];
 }
 
-- (UIViewController *)getLoginViewController: (LoginBlock) loginBlock
-                                failureBlock: (LoginFailureBlock) failBlock {
+- (UIViewController *)getLoginViewController: (LoginBlock) loginBlock {
     LoginViewController *loginVC = (LoginViewController *)[self getVCFromMainBundle];
     
     [loginVC setLoginResult:^(NSString *token) {
         loginBlock(token);
         self.token = token;
-    } failureBlock:^(NSString *errorMessage) {
-        failBlock(errorMessage);
     }];
     
     return loginVC;
