@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "01CB61FC87043A09DB951C42CDA9EE934507461E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "01CB61FC87043A09DB951C42CDA9EE934507461E" : 0,
+    "59B0DD3A0DC0B86D2A06DD4B68CBD1C997876614" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "23327C2C-D967-48DB-AD3E-9DD1C3151380",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "01CB61FC87043A09DB951C42CDA9EE934507461E" : "LoginManagerSDKSimpleDemo\/",
+    "59B0DD3A0DC0B86D2A06DD4B68CBD1C997876614" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "AccountManagerSDKResource",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "AccountManagerSDKResource\/AccountManagerSDKResource.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/lizelu\/LoginManagerSDKSimpleDemo.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "01CB61FC87043A09DB951C42CDA9EE934507461E"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/lizelu\/CollectionViewControllerDemo.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "59B0DD3A0DC0B86D2A06DD4B68CBD1C997876614"
+    }
+  ]
+}
