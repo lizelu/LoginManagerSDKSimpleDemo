@@ -58,7 +58,7 @@
 		F4B50A981D766EE000F907D6 /* GuidViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuidViewController.m; sourceTree = "<group>"; };
 		F4B50AA41D7678F300F907D6 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		F4B50AA51D7678F300F907D6 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		F4B50B3B1D76C96800F907D6 /* LoginSDKResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LoginSDKResource.bundle; sourceTree = "<group>"; };
+		F4B50B3B1D76C96800F907D6 /* LoginSDKResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = LoginSDKResource.bundle; path = LoginSDK/LoginSDKResource.bundle; sourceTree = "<group>"; };
 		F4B50B711D76CFC800F907D6 /* AccountManagerSDKResource.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = AccountManagerSDKResource.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,6 +102,7 @@
 				F4B50A6F1D766C4E00F907D6 /* LaunchScreen.storyboard */,
 				F4B50A721D766C4E00F907D6 /* Info.plist */,
 				F4B50A951D766EE000F907D6 /* MyLoginTest.pch */,
+				F4B50B3B1D76C96800F907D6 /* LoginSDKResource.bundle */,
 				F4B50A611D766C4E00F907D6 /* Supporting Files */,
 			);
 			path = AccountManagerSDKResource;
@@ -118,7 +119,6 @@
 		F4B50A781D766EE000F907D6 /* LoginSDK */ = {
 			isa = PBXGroup;
 			children = (
-				F4B50B3B1D76C96800F907D6 /* LoginSDKResource.bundle */,
 				F4B50A791D766EE000F907D6 /* LGEncrypt */,
 				F4B50A801D766EE000F907D6 /* LGManager */,
 				F4B50A861D766EE000F907D6 /* LGModel */,

@@ -30,7 +30,6 @@
 }
 
 - (void)checkHaveLogin: (BOOL)isTapButton {
-    
     if (_loginAPI != nil) {
         __weak typeof (self) weak_self = self;
         [_loginAPI checkHaveLogin:^(NSString *token) {
@@ -44,7 +43,6 @@
 }
 
 - (void)presentLoginViewController {
-    
     __weak typeof (self) weak_self = self;
     UIViewController *vc = [_loginAPI getLoginViewController:^(NSString *token) {
         [weak_self presentMainViewControllerWithText:token];
