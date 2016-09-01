@@ -22,7 +22,7 @@
 }
 
 -(void)viewDidAppear:(BOOL)animated {
-    [self checkHaveLogin:NO];
+ //   [self checkHaveLogin:NO];
 }
 
 - (IBAction)tapLogin:(id)sender {
