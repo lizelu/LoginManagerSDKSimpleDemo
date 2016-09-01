@@ -18,40 +18,42 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _loginAPI = [LoginAPI shareManager];
+    _loginAPI = [LoginAPI shareManager];        //获取LoginAPI单例
 }
 
--(void)viewDidAppear:(BOOL)animated {
-    //[self checkHaveLogin:NO];
-}
-
-- (IBAction)tapLogin:(id)sender {
+- (IBAction)tapLogin: (id)sender {
     [self checkHaveLogin:YES];
 }
 
+//检查是否已经登录
 - (void)checkHaveLogin: (BOOL)isTapButton {
-    
     if (_loginAPI != nil) {
         __weak typeof (self) weak_self = self;
         [_loginAPI checkHaveLogin:^(NSString *token) {
-            [weak_self presentMainViewControllerWithText:token];
+            [weak_self presentMainViewControllerWithText:token];    //二次登录，成功后直接进入首页
         } noAccountBlock:^{
             if (isTapButton) {
-                [weak_self presentLoginViewController];
+                [weak_self presentLoginViewController];             //首次登录，获取登录页面，进行登录
             }
         }];
     }
 }
 
+//通过loginAPI获取登录页面，并对登录成功后的事件进行处理
 - (void)presentLoginViewController {
-    
     __weak typeof (self) weak_self = self;
     UIViewController *vc = [_loginAPI getLoginViewController:^(NSString *token) {
         [weak_self presentMainViewControllerWithText:token];
     }];
-    
     [self presentViewController:vc animated:YES completion:^{}];
 }
+
+
+
+-(void)viewDidAppear:(BOOL)animated {
+    //[self checkHaveLogin:NO];
+}
+
 
 - (void)presentMainViewControllerWithText: (NSString *)text {
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
